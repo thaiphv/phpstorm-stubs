@@ -226,7 +226,7 @@ class SplFileInfo  {
          * @link http://php.net/manual/en/splfileinfo.openfile.php
          * @param string $open_mode [optional] <p>
 	 * The mode for opening the file. See the <b>fopen</b>
-         * documentation for descriptions of possible modes. The default 
+         * documentation for descriptions of possible modes. The default
          * is read only.
          * </p>
          * @param bool $use_include_path [optional] <p>
@@ -244,9 +244,9 @@ class SplFileInfo  {
 	 * Sets the class name used with <b>SplFileInfo::openFile</b>
          * @link http://php.net/manual/en/splfileinfo.setfileclass.php
          * @param string $class_name [optional] <p>
-         * The class name to use when openFile() is called. 
+         * The class name to use when openFile() is called.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.2
          */
         public function setFileClass ($class_name = null) {}
@@ -257,7 +257,7 @@ class SplFileInfo  {
          * @param string $class_name [optional] <p>
          * The class name to use.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.2
          */
         public function setInfoClass ($class_name = null) {}
@@ -303,7 +303,7 @@ class DirectoryIterator extends SplFileInfo implements SeekableIterator {
         /**
          * Rewind the DirectoryIterator back to the start
          * @link http://php.net/manual/en/directoryiterator.rewind.php
-         * @return void 
+         * @return void
          * @since 5.0
          */
         public function rewind () {}
@@ -335,7 +335,7 @@ class DirectoryIterator extends SplFileInfo implements SeekableIterator {
         /**
          * Move forward to next DirectoryIterator item
          * @link http://php.net/manual/en/directoryiterator.next.php
-         * @return void 
+         * @return void
          * @since 5.0
          */
         public function next () {}
@@ -346,7 +346,7 @@ class DirectoryIterator extends SplFileInfo implements SeekableIterator {
          * @param int $position <p>
          * The zero-based numeric position to seek to.
          * </p>
-         * @return void 
+         * @return void
 	 * @since 5.3.0
          */
         public function seek ($position) {}
@@ -382,7 +382,7 @@ class FilesystemIterator extends DirectoryIterator {
         /**
          * Rewinds back to the beginning
          * @link http://php.net/manual/en/filesystemiterator.rewind.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function rewind () {}
@@ -390,7 +390,7 @@ class FilesystemIterator extends DirectoryIterator {
         /**
          * Move to the next file
          * @link http://php.net/manual/en/filesystemiterator.next.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function next () {}
@@ -428,7 +428,7 @@ class FilesystemIterator extends DirectoryIterator {
          * The handling flags to set.
          * See the FilesystemIterator constants.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function setFlags ($flags = null) {}
@@ -488,7 +488,7 @@ class RecursiveDirectoryIterator extends FilesystemIterator implements Recursive
         /**
          * Rewinds back to the beginning
          * @link http://php.net/manual/en/filesystemiterator.rewind.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function rewind () {}
@@ -496,7 +496,7 @@ class RecursiveDirectoryIterator extends FilesystemIterator implements Recursive
         /**
          * Move to the next file
          * @link http://php.net/manual/en/filesystemiterator.next.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function next () {}
@@ -522,7 +522,7 @@ class RecursiveDirectoryIterator extends FilesystemIterator implements Recursive
 }
 
 /**
- * Iterates through a file system in a similar fashion to 
+ * Iterates through a file system in a similar fashion to
  * <b>glob</b>.
  * @link http://php.net/manual/en/class.globiterator.php
  */
@@ -590,7 +590,7 @@ class SplFileObject extends SplFileInfo implements RecursiveIterator, SeekableIt
         /**
          * Rewind the file to the first line
          * @link http://php.net/manual/en/splfileobject.rewind.php
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function rewind () {}
@@ -682,7 +682,7 @@ class SplFileObject extends SplFileInfo implements RecursiveIterator, SeekableIt
          * @param string $escape [optional] <p>
          * The field escape character (one character only).
          * </p>
-         * @return void 
+         * @return void
          * @since 5.2.0
          */
 	public function setCsvControl ($delimiter = ",", $enclosure = "\"", $escape = "\\") {}
@@ -856,7 +856,7 @@ class SplFileObject extends SplFileInfo implements RecursiveIterator, SeekableIt
         /**
          * Read next line
          * @link http://php.net/manual/en/splfileobject.next.php
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function next () {}
@@ -865,11 +865,11 @@ class SplFileObject extends SplFileInfo implements RecursiveIterator, SeekableIt
          * Sets flags for the SplFileObject
          * @link http://php.net/manual/en/splfileobject.setflags.php
          * @param int $flags <p>
-         * Bit mask of the flags to set. See 
-         * SplFileObject constants 
+         * Bit mask of the flags to set. See
+         * SplFileObject constants
          * for the available flags.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function setFlags ($flags) {}
@@ -888,7 +888,7 @@ class SplFileObject extends SplFileInfo implements RecursiveIterator, SeekableIt
          * @param int $max_len <p>
          * The maximum length of a line.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function setMaxLineLen ($max_len) {}
@@ -924,7 +924,7 @@ class SplFileObject extends SplFileInfo implements RecursiveIterator, SeekableIt
          * @param int $line_pos <p>
          * The zero-based line number to seek to.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function seek ($line_pos) {}
@@ -1005,7 +1005,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
          * @param mixed $value <p>
          * The value to push.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function push ($value) {}
@@ -1016,7 +1016,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
          * @param mixed $value <p>
          * The value to unshift.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function unshift ($value) {}
@@ -1061,7 +1061,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
          * </p>
          * The direction of the iteration (either one or the other):
 	 * <b>SplDoublyLinkedList::IT_MODE_LIFO</b> (Stack style)
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function setIteratorMode ($mode) {}
@@ -1105,7 +1105,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
          * @param mixed $newval <p>
 	 * The new value for the <i>index</i>.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function offsetSet ($index, $newval) {}
@@ -1116,7 +1116,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
          * @param mixed $index <p>
          * The index being unset.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function offsetUnset ($index) {}
@@ -1124,7 +1124,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
         /**
          * Rewind iterator back to the start
          * @link http://php.net/manual/en/spldoublylinkedlist.rewind.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function rewind () {}
@@ -1148,7 +1148,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
         /**
          * Move to next entry
          * @link http://php.net/manual/en/spldoublylinkedlist.next.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function next () {}
@@ -1156,7 +1156,7 @@ class SplDoublyLinkedList implements Iterator, Countable, ArrayAccess {
         /**
          * Move to previous entry
          * @link http://php.net/manual/en/spldoublylinkedlist.prev.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function prev () {}
@@ -1201,7 +1201,7 @@ class SplQueue extends SplDoublyLinkedList {
          * @param mixed $value <p>
          * The value to enqueue.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function enqueue ($value) {}
@@ -1228,25 +1228,6 @@ class SplQueue extends SplDoublyLinkedList {
     public function setIteratorMode ($mode) {}
 
 }
-/**
- * The SplStack class provides the main functionalities of a stack implemented using a doubly linked list.
- * @link http://php.net/manual/en/class.splstack.php
- */
-class SplStack extends SplDoublyLinkedList {
-
-    /**
-     * Sets the mode of iteration
-     * @link http://php.net/manual/en/spldoublylinkedlist.setiteratormode.php
-     * @param int $mode <p>
-     * There are two orthogonal sets of modes that can be set:
-     * </p>
-     * The direction of the iteration (either one or the other):
-     * <b>SplDoublyLinkedList::IT_MODE_LIFO</b> (Stack style)
-     * @return void
-     * @since 5.3.0
-     */
-    public function setIteratorMode ($mode) {}
-}
 
 /**
  * The SplHeap class provides the main functionalities of an Heap.
@@ -1268,7 +1249,7 @@ abstract class SplHeap implements Iterator, Countable {
          * @param mixed $value <p>
          * The value to insert.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function insert ($value) {}
@@ -1300,7 +1281,7 @@ abstract class SplHeap implements Iterator, Countable {
         /**
          * Rewind iterator back to the start (no-op)
          * @link http://php.net/manual/en/splheap.rewind.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function rewind () {}
@@ -1324,7 +1305,7 @@ abstract class SplHeap implements Iterator, Countable {
         /**
          * Move to the next node
          * @link http://php.net/manual/en/splheap.next.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function next () {}
@@ -1340,7 +1321,7 @@ abstract class SplHeap implements Iterator, Countable {
         /**
          * Recover from the corrupted state and allow further actions on the heap.
          * @link http://php.net/manual/en/splheap.recoverfromcorruption.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function recoverFromCorruption () {}
@@ -1406,7 +1387,7 @@ class SplMinHeap extends SplHeap {
          * @param mixed $value <p>
          * The value to insert.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function insert ($value) {}
@@ -1438,7 +1419,7 @@ class SplMinHeap extends SplHeap {
         /**
          * Rewind iterator back to the start (no-op)
          * @link http://php.net/manual/en/splheap.rewind.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function rewind () {}
@@ -1462,7 +1443,7 @@ class SplMinHeap extends SplHeap {
         /**
          * Move to the next node
          * @link http://php.net/manual/en/splheap.next.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function next () {}
@@ -1478,7 +1459,7 @@ class SplMinHeap extends SplHeap {
         /**
          * Recover from the corrupted state and allow further actions on the heap.
          * @link http://php.net/manual/en/splheap.recoverfromcorruption.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function recoverFromCorruption () {}
@@ -1509,158 +1490,11 @@ class SplMaxHeap extends SplHeap {
     protected function compare ($value1, $value2) {}
 
 }
-/**
- * The SplPriorityQueue class provides the main functionalities of an 
- * prioritized queue, implemented using a heap.
- * @link http://php.net/manual/en/class.splpriorityqueue.php
- */
-class SplPriorityQueue implements Iterator, Countable {
-        const EXTR_BOTH = 3;
-        const EXTR_PRIORITY = 2;
-        const EXTR_DATA = 1;
-
-
-        /**
-         * Compare priorities in order to place elements correctly in the heap while sifting up.
-         * @link http://php.net/manual/en/splpriorityqueue.compare.php
-         * @param mixed $priority1 <p>
-         * The priority of the first node being compared.
-         * </p>
-         * @param mixed $priority2 <p>
-         * The priority of the second node being compared.
-         * </p>
-	 * @return int Result of the comparison, positive integer if <i>priority1</i> is greater than <i>priority2</i>, 0 if they are equal, negative integer otherwise.
-         * </p>
-         * <p>
-         * Multiple elements with the same priority will get dequeued in no particular order.
-         * @since 5.3.0
-         */
-        public function compare ($priority1, $priority2) {}
-
-        /**
-         * Inserts an element in the queue by sifting it up.
-         * @link http://php.net/manual/en/splpriorityqueue.insert.php
-         * @param mixed $value <p>
-         * The value to insert.
-         * </p>
-         * @param mixed $priority <p>
-         * The associated priority.
-         * </p>
-         * @return void 
-         * @since 5.3.0
-         */
-        public function insert ($value, $priority) {}
-
-        /**
-         * Sets the mode of extraction
-         * @link http://php.net/manual/en/splpriorityqueue.setextractflags.php
-         * @param int $flags <p>
-	 * Defines what is extracted by <b>SplPriorityQueue::current</b>,
-	 * <b>SplPriorityQueue::top</b> and
- 	 * <b>SplPriorityQueue::extract</b>.
-        * </p>
-	 * <b>SplPriorityQueue::EXTR_DATA</b> (0x00000001): Extract the data
-         * @return void 
-         * @since 5.3.0
-         */
-        public function setExtractFlags ($flags) {}
-
-        /**
-	 * Peeks at the node from the top of the queue
-         * @link http://php.net/manual/en/splpriorityqueue.top.php
-         * @return mixed The value or priority (or both) of the top node, depending on the extract flag.
-         * @since 5.3.0
-         */
-        public function top () {}
-
-        /**
-         * Extracts a node from top of the heap and sift up.
-         * @link http://php.net/manual/en/splpriorityqueue.extract.php
-         * @return mixed The value or priority (or both) of the extracted node, depending on the extract flag.
-         * @since 5.3.0
-         */
-        public function extract () {}
-
-        /**
-         * Counts the number of elements in the queue.
-         * @link http://php.net/manual/en/splpriorityqueue.count.php
-         * @return int the number of elements in the queue.
-         * @since 5.3.0
-         */
-        public function count () {}
-
-        /**
-         * Checks whether the queue is empty.
-         * @link http://php.net/manual/en/splpriorityqueue.isempty.php
-         * @return bool whether the queue is empty.
-         * @since 5.3.0
-         */
-        public function isEmpty () {}
-
-        /**
-         * Rewind iterator back to the start (no-op)
-         * @link http://php.net/manual/en/splpriorityqueue.rewind.php
-         * @return void 
-         * @since 5.3.0
-         */
-        public function rewind () {}
-
-        /**
-         * Return current node pointed by the iterator
-         * @link http://php.net/manual/en/splpriorityqueue.current.php
-         * @return mixed The value or priority (or both) of the current node, depending on the extract flag.
-         * @since 5.3.0
-         */
-        public function current () {}
-
-        /**
-         * Return current node index
-         * @link http://php.net/manual/en/splpriorityqueue.key.php
-         * @return mixed The current node index.
-         * @since 5.3.0
-         */
-        public function key () {}
-
-        /**
-         * Move to the next node
-         * @link http://php.net/manual/en/splpriorityqueue.next.php
-         * @return void 
-         * @since 5.3.0
-         */
-        public function next () {}
-
-        /**
-         * Check whether the queue contains more nodes
-         * @link http://php.net/manual/en/splpriorityqueue.valid.php
-         * @return bool true if the queue contains any more nodes, false otherwise.
-         * @since 5.3.0
-         */
-        public function valid () {}
-
-        /**
-         * Recover from the corrupted state and allow further actions on the queue.
-         * @link http://php.net/manual/en/splpriorityqueue.recoverfromcorruption.php
-         * @return void 
-         * @since 5.3.0
-         */
-        public function recoverFromCorruption () {}
-
-    /**
-     * @return bool
-     */
-    public function isCorrupted() {}
-
-    /**
-     * @return int
-     */
-    public function getExtractFlags() {}
-
-}
 
 /**
- * The SplFixedArray class provides the main functionalities of array. The 
- * main differences between a SplFixedArray and a normal PHP array is that 
- * the SplFixedArray is of fixed length and allows only integers within 
+ * The SplFixedArray class provides the main functionalities of array. The
+ * main differences between a SplFixedArray and a normal PHP array is that
+ * the SplFixedArray is of fixed length and allows only integers within
  * the range as indexes. The advantage is that it allows a faster array
  * implementation.
  * @link http://php.net/manual/en/class.splfixedarray.php
@@ -1698,7 +1532,7 @@ class SplFixedArray implements Iterator, ArrayAccess, Countable {
          * The array to import.
          * </p>
 	 * @param bool $save_indexes [optional] <p>
-         * Try to save the numeric indexes used in the original array. 
+         * Try to save the numeric indexes used in the original array.
          * </p>
 	 * @return SplFixedArray an instance of <b>SplFixedArray</b>
          * containing the array content.
@@ -1756,7 +1590,7 @@ class SplFixedArray implements Iterator, ArrayAccess, Countable {
          * @param mixed $newval <p>
 	 * The new value for the <i>index</i>.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function offsetSet ($index, $newval) {}
@@ -1767,7 +1601,7 @@ class SplFixedArray implements Iterator, ArrayAccess, Countable {
          * @param int $index <p>
          * The index being unset.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function offsetUnset ($index) {}
@@ -1775,7 +1609,7 @@ class SplFixedArray implements Iterator, ArrayAccess, Countable {
         /**
          * Rewind iterator back to the start
          * @link http://php.net/manual/en/splfixedarray.rewind.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function rewind () {}
@@ -1799,7 +1633,7 @@ class SplFixedArray implements Iterator, ArrayAccess, Countable {
         /**
          * Move to next entry
          * @link http://php.net/manual/en/splfixedarray.next.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function next () {}
@@ -1832,7 +1666,7 @@ interface SplObserver  {
          * @param SplSubject $subject <p>
 	 * The <b>SplSubject</b> notifying the observer of an update.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function update (SplSubject $subject);
@@ -1852,7 +1686,7 @@ interface SplSubject  {
          * @param SplObserver $observer <p>
 	 * The <b>SplObserver</b> to attach.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function attach (SplObserver $observer);
@@ -1863,7 +1697,7 @@ interface SplSubject  {
          * @param SplObserver $observer <p>
 	 * The <b>SplObserver</b> to detach.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function detach (SplObserver $observer);
@@ -1871,7 +1705,7 @@ interface SplSubject  {
         /**
          * Notify an observer
          * @link http://php.net/manual/en/splsubject.notify.php
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function notify ();
@@ -1895,7 +1729,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
          * @param mixed $data [optional] <p>
          * The data to associate with the object.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function attach ($object, $data = null) {}
@@ -1906,7 +1740,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
          * @param object $object <p>
          * The object to remove.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function detach ($object) {}
@@ -1928,7 +1762,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
          * @param SplObjectStorage $storage <p>
          * The storage you want to import.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
 	public function addAll ($storage) {}
@@ -1939,7 +1773,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
          * @param SplObjectStorage $storage <p>
          * The storage containing the elements to remove.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
 	public function removeAll ($storage) {}
@@ -1969,7 +1803,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
          * @param mixed $data <p>
          * The data to associate with the current iterator entry.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function setInfo ($data) {}
@@ -1985,7 +1819,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
         /**
          * Rewind the iterator to the first storage element
          * @link http://php.net/manual/en/splobjectstorage.rewind.php
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function rewind () {}
@@ -2017,7 +1851,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
         /**
          * Move to the next entry
          * @link http://php.net/manual/en/splobjectstorage.next.php
-         * @return void 
+         * @return void
          * @since 5.1.0
          */
         public function next () {}
@@ -2028,7 +1862,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
          * @param string $serialized <p>
          * The serialized representation of a storage.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.2.2
          */
         public function unserialize ($serialized) {}
@@ -2062,7 +1896,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
 	 * @param mixed $data [optional] <p>
          * The data to associate with the object.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
 	public function offsetSet ($object, $data = null) {}
@@ -2073,7 +1907,7 @@ class SplObjectStorage implements Countable, Iterator, Serializable, ArrayAccess
          * @param object $object <p>
          * The object to remove.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function offsetUnset ($object) {}
@@ -2135,7 +1969,7 @@ class MultipleIterator implements Iterator {
          * The flags to set, according to the
          * Flag Constants
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function setFlags ($flags) {}
@@ -2161,7 +1995,7 @@ class MultipleIterator implements Iterator {
          * @param Iterator $iterator <p>
          * The iterator to detach.
          * </p>
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
 	public function detachIterator (Iterator $iterator) {}
@@ -2188,7 +2022,7 @@ class MultipleIterator implements Iterator {
         /**
          * Rewinds all attached iterator instances
          * @link http://php.net/manual/en/multipleiterator.rewind.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function rewind () {}
@@ -2225,7 +2059,7 @@ class MultipleIterator implements Iterator {
         /**
          * Moves all attached iterator instances forward
          * @link http://php.net/manual/en/multipleiterator.next.php
-         * @return void 
+         * @return void
          * @since 5.3.0
          */
         public function next () {}
