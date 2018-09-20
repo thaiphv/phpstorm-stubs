@@ -128,7 +128,7 @@ function apcu_fetch($key, &$success = null){}
 /**
  * Removes a stored variable from the cache
  * @link http://php.net/manual/en/function.apcu-delete.php
- * @param string|string[]|APCUIterator $key The key used to store the value (with apcu_store()).
+ * @param string|string[]|APCuIterator $key The key used to store the value (with apcu_store()).
  * @return bool|string[] Returns TRUE on success or FALSE on failure. For array of keys returns list of failed keys.
  */
 function apcu_delete($key){}
@@ -237,9 +237,9 @@ function apcu_entry($key, callable $generator, $ttl = 0){}
 function apcu_cache_info($limited = false){}
 
 /**
- * The APCUIterator class
+ * The APCuIterator class
  *
- * The APCUIterator class makes it easier to iterate over large APCu caches.
+ * The APCuIterator class makes it easier to iterate over large APCu caches.
  * This is helpful as it allows iterating over large caches in steps, while grabbing a defined number
  * of entries per lock instance, so it frees the cache locks for other activities rather than hold up
  * the entire cache to grab 100 (the default) entries. Also, using regular expression matching is more
@@ -248,10 +248,10 @@ function apcu_cache_info($limited = false){}
  * @link http://php.net/manual/en/class.apcuiterator.php
  * @since APCu 5.0.0
  */
-class APCUIterator implements Iterator
+class APCuIterator implements Iterator
 {
 	/**
-	 * Constructs an APCUIterator iterator object
+	 * Constructs an APCuIterator iterator object
 	 * @link http://php.net/manual/en/apcuiterator.construct.php
 	 * @param string|string[]|null $search A PCRE regular expression that matches against APCu key names,
 	 * either as a string for a single regular expression, or as an array of regular expressions.
@@ -276,7 +276,7 @@ class APCUIterator implements Iterator
 	public function valid(){}
 
 	/**
-	 * Gets the current item from the APCUIterator stack
+	 * Gets the current item from the APCuIterator stack
 	 * @link http://php.net/manual/en/apcuiterator.current.php
 	 * @return mixed Returns the current item on success, or FALSE if no more items or exist, or on failure.
 	 */
